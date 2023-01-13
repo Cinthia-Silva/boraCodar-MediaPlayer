@@ -1,0 +1,139 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: url(./imagens/background.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    position: relative;
+}
+
+#container {
+    width: 350px;
+    height: 450px;
+    margin: 90px auto;
+    background: linear-gradient(to bottom, #02042b, #003047, #05866a);
+    display: grid;
+    border-radius: 9px;
+    -webkit-border-radius: 9px;
+    -moz-border-radius: 9px;
+    -o-border-radius: 9px;
+    box-shadow: 8px 5px 5px #000000;
+}
+
+#player_1 {
+    padding: 58px 38px;
+    width: fit-content;
+    margin: 0 auto;
+}
+
+#player_1 img {
+    width: 190px;
+    height: 190px;
+    object-fit: cover;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -o-border-radius: 10px;
+    box-shadow: 8px 5px 5px #000000;
+}
+
+.player {
+    padding: 20px;
+}
+
+.capa {
+ width: 200px;
+}
+
+.descricao {
+    display: grid;
+    gap: 9.6px;
+    margin-top: 15px;
+    color: #ABB6A8;
+    text-shadow: 3px 3px 3px #000000;
+}
+
+.descricao h1 {
+    font-size: 24px;
+}
+
+.controles {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 25px;
+}
+
+.hide {
+    display: none;
+}
+
+.voltar, .play, .avancar, .pause {
+    cursor: pointer;
+}
+
+.total {
+    height: 6px;
+    width: 100%;
+    display: flex;
+    background: #ABB6A8;
+    opacity: 0.3;
+    border-radius: 10px;
+    position: absolute;
+    box-shadow: 3px 3px 3px #000000;
+    top: 0;
+    left: 0;
+}
+
+.progresso {
+    height: 6px;
+    width: 0;
+    display: block;
+    background: #ABB6A8;
+    border-radius: 10px;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.time {
+    font-size: 14px;
+    color: #ABB6A8;
+    opacity: 0.7;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+    position: relative;
+
+}
+
+.count-time {
+    position: relative;
+    width: 100%;
+    margin: 15px 0 0 0;
+}
+
+.time-start {
+    display: inline-block;
+}
+
+.time-end {
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+@media (max-width: 480px) {
+    #container {
+        display: flex;
+    }
+}
+
+
+
+
